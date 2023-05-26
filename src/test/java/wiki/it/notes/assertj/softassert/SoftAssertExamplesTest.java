@@ -17,7 +17,6 @@ public class SoftAssertExamplesTest {
 
     @Test
     void assertAllTest() {
-        var person = new Person().setFullName(null).setCity("Boston").setAge(16);
         var softAssertions = new SoftAssertions();
 
         softAssertions.assertThat(person.getFullName())
