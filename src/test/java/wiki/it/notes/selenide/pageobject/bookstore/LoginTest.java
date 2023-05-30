@@ -14,7 +14,7 @@ public class LoginTest extends BaseTest {
 
     @BeforeClass
     void setupClass() {
-        user = new User().setUserName("it-notes").setPassword("Aqa12345*");
+        user = new User("it-notes", "Aqa12345");
     }
 
     @Test
@@ -23,6 +23,6 @@ public class LoginTest extends BaseTest {
 
         assertThat(profilePage.getUsername())
                 .as("Check username on profile page")
-                .isEqualTo(user.getUserName());
+                .isEqualTo(user.username());
     }
 }

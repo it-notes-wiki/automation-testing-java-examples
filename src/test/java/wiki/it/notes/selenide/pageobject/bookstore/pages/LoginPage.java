@@ -13,8 +13,8 @@ public class LoginPage {
     private final String LOGIN_BUTTON = "#login";
 
     public ProfilePage loginToProfile(User user) {
-        $(USERNAME_FIELD).setValue(user.getUserName());
-        $(PASSWORD_FIELD).setValue(user.getPassword());
+        $(USERNAME_FIELD).setValue(user.username());
+        $(PASSWORD_FIELD).setValue(user.password());
         $(LOGIN_BUTTON).click();
         return page(ProfilePage.class);
     }
