@@ -14,7 +14,7 @@ public class LoginTest extends BaseTest {
 
     @BeforeClass
     void setupClass() {
-        user = new User("it-notes", "Aqa12345");
+        user = new User("it-notes", "Aqa12345*");
     }
 
     @Test
